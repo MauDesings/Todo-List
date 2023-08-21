@@ -3,11 +3,12 @@ import todoReducer from "../todo-reducer";
 
 
 function useTodo() {
-    const initialState = [];
 
     function init() {
         return JSON.parse(localStorage.getItem('to-do')) || [];
     }
+
+    const initialState = [];
 
     const [state,dispach] = useReducer(todoReducer,initialState,init)
     const [valueTask, setValueTask] = useState('');
