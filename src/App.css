@@ -1,0 +1,227 @@
+/* ---------------------- section  header ------------------------ */
+
+.section{
+    background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%);
+    padding-bottom: 50px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.total-data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 25px 0;
+}
+
+.total{
+    font-size: 1.8rem;
+    color: #e6dddd;
+}
+
+.total span{
+    background-color: #0c60b370;
+    display: inline-block;
+    width: 20px;
+    height: 25px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 1.5;
+
+}
+
+
+.title{
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 26px 0;
+}
+
+.subtitle{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 3rem;
+    color: #495057;
+    font-weight: 300;
+}
+
+
+
+/* -------------------------------- body-content --------------------------  */
+
+.body-content{
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1100px;
+    background-color: #fff;
+    padding:30px 15px;
+    border-radius: 20px;
+    box-shadow: 7px 13px 37px rgba(0, 0, 0, 0.651);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+
+
+.column{  /* para ambas columnas */
+    width: 100%;
+    max-width: 500px;
+}
+
+.form{
+    display: grid;
+    gap: 30px;
+}
+
+.group{
+    display: flex;
+    flex-direction: column;
+    min-height: 46px;
+}
+
+label{
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+
+.inp{
+    padding: 13px 7px;
+    outline: none;
+    border: 2px solid transparent;
+    background-color: #46f0a417;
+    color: #495057;
+    border-radius: 3px;
+    font-size: 1.5rem;
+
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.inp:focus{
+    border-color: rgba(68, 137, 240, 0.596);
+    box-shadow: 0 0 0 0.2rem rgba(68, 137, 240, 0.336);
+}
+
+
+button{
+    border: none;
+    display: block;
+    padding: 15px;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 5px;
+    font-size: 1.7rem;
+    font-weight: bold;
+    background-color: rgb(68, 137, 240);
+    /* background-color: rgb(252, 44, 44); */
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(27, 93, 192);
+}
+
+button.active{
+    cursor: not-allowed;
+}
+
+
+
+/* -------------------------- listado -------------------------  */
+
+.list-content{
+    min-height: 150px;
+    background-color: rgba(127, 255, 212, 0.61);
+    border-radius: 3px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.list-tasks{
+    background-color: #fff;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.group-controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.list-tasks .to-do{
+    color: #495057;
+    font-weight: 400;
+    font-size: 1.8rem;
+    margin-bottom: 0;
+}
+
+
+.btn-delete{
+    background-color: rgb(250, 75, 75);
+    padding: 0;
+    width: 45px;
+    height: 30px;
+    font-size: 2.5rem;
+    display: grid;
+    place-items: center;
+}
+
+.btn-delete:hover{
+    background-color: rgb(218, 58, 58);
+}
+
+
+.btn-edit{
+    background-color: rgb(68, 137, 240);
+    padding: 0;
+    width: 45px;
+    height: 30px;
+    font-size: 2.5rem;
+    display: grid;
+    place-items: center;
+}
+
+
+.list-tasks .completed{
+    color: rgb(68, 137, 240);
+    text-decoration: line-through;
+}
+
+
+
+.list-content h5{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 50px;
+    color: #495057;
+}
+
+
+@media (min-width: 1300px){
+    .section{
+        gap: 30px;
+        /* display: inherit;
+        padding-top: 110px; */
+    }
+    
+    
+    .title{
+        font-size: 3.4rem;
+    }
+}
