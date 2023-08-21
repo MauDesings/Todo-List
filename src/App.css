@@ -131,7 +131,7 @@ button:hover{
     background-color: rgb(27, 93, 192);
 }
 
-button.active{
+button.isActive{
     cursor: not-allowed;
 }
 

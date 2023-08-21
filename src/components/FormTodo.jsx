@@ -19,7 +19,7 @@ const FormTodo = ({valueTask,setValueTask,handleSubmit,isEditing}) => {
 
             <button 
                 type='submit' 
-                className={valueTask ? '' : 'active'} 
+                className={valueTask ? '' : 'isActive'} 
                 disabled={valueTask ? '' : 'disabled'}>{isEditing ? 'OK' : 'ADD'}
             </button>
         </form>
